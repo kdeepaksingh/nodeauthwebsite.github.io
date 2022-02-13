@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    {{!-- <title>Job Application Form</title> --}}
+    <style type="text/css">
+        body {
+            background-color: orange;
+            margin: 0px;
+        }
+
+        h2 {
+            background-color: forestgreen;
+            text-align: center;
+            padding: 10px;
+            color: white;
+
+        }
+
+        input {
+            height: 35px !important;
+            border-radius: 10px !important;
+            border: none !important;
+            outline: none !important;
+
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none !important;
+            border: 1px solid rgb(220, 252, 42);
+        }
+
+        textarea {
+            border-radius: 10px;
+
+        }
+
+        .labelStyle {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .myPatBtn5 {
+            text-transform: capitalize !important;
+            color: white !important;
+            border-radius: 20px 0px 20px 0px !important;
+            height: 32px;
+            padding: 6px 32px !important;
+            font-size: 13px !important;
+            font-weight: 500;
+            cursor: pointer !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Online Employee Application Form</h1>
+    <div id="personal-information">
+        <h2>Employee Information</h2>
+    </div>
+    <form action="/register"  method="POST">
+    <div class="row">
+        <div class="col-5" style="margin-left: 85px;">
+            <input type="text" class="form-control" name="firstname" placeholder="First Name">
+        </div>
+        <div class="col-5 ml-4">
+            <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+        </div>
+        <div class="col-5 mt-2" style="margin-left: 85px;">
+            <input type="email" class="form-control" name="email" placeholder="email@example.com">
+        </div>
+        <div class="col-5 ml-4 mt-2">
+            <input type="text" class="form-control" name="phone" placeholder="Enter Phone No">
+        </div>
+        <div class="col-5 mt-2" style="margin-left: 85px;">
+            <input type="password" class="form-control" name="password" placeholder="Enter Password">
+        </div>
+        <div class="col-5 ml-4 mt-2">
+            <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password">
+        </div>
+        <div class="col-5 mt-2" style="margin-left: 85px;">
+            <input type="text" class="form-control" name="age" placeholder="Enter Your Age">
+        </div>
+        <div class="col-5 ml-4 mt-2">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender"
+                    value="male">
+                <label class="form-check-label labelStyle">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender"
+                    value="female">
+                <label class="form-check-label labelStyle" >Female</label>
+            </div>
+        </div>
+        <div class="w-100 mt-3" style="text-align: center;">
+            {{!-- <button class="myPatBtn5 btn ml-1" type="button"
+                style="background: linear-gradient(120deg, #07a1c3 0%, #B51F8D 100%) !important;">Register</button> --}}
+                <input class="myPatBtn5 btn ml-1" type="submit" style="background: linear-gradient(120deg, #07a1c3 0%, #B51F8D 100%) !important;"
+                    value="Register" />
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>

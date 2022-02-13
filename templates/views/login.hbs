@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fancy Login Form</title>
+  <style type="text/css">
+
+   body{
+   	font-family:Arial,sans-sarif;
+   	background-image:url("images/tiger.jpg");
+   	background-size: cover;
+   }
+  	.form{
+  		background-image:url("https://data.whicdn.com/images/271031151/original.gif");
+  		border:4px solid blue;
+  		width: 250px;
+  		text-align: center;
+  		border-radius: 15px;
+      margin: auto;
+  	}
+  	.form h2{
+  		color:white;
+  	}
+  	input[type='text'],input[type='password']{
+  		height: 35px;
+  		text-align: center;
+  		border:2px solid blue;
+  		margin: 5px;
+  		font-size: 18px;
+  		width: 200px;
+  		border-radius: 15px;
+  	}
+  	input[type='text']:focus,
+  	input[type='password']:focus{
+  		outline: none;
+  		background-color: lightblue;
+      }
+      input[type='submit']{
+		background: linear-gradient(120deg, #07a1c3 0%, #B51F8D 100%) !important;
+      	color: white;
+      	borer:none;
+      	font-size:18px;
+      	padding: 8px 40px;
+      	border-radius: 50px;
+      	margin: 5px 0px 10px 0px;
+
+      }
+      input[type='submit']:hover{
+      	opacity: 0.8;
+      	cursor: pointer;
+      	box-shadow: 0 0 15px lightblue;
+      }
+	  .myPatBtn5 {
+            text-transform: capitalize !important;
+            color: white !important;
+            border-radius: 20px 0px 20px 0px !important;
+            height: 32px;
+            padding: 6px 32px !important;
+            font-size: 13px !important;
+            font-weight: 500;
+            cursor: pointer !important;
+        }
+  </style>
+
+</head>
+<body>
+
+<!--login form-->
+<div class="form" >
+	<h2>Employee Login Here</h2>
+	<form  action="/login" method="POST">
+		<input type="text" name="email" placeholder="email@gmail.com" required>
+		<br>
+		<input type="password" name="password" placeholder="Enter Your Password" required>
+		<br>
+		<input class="myPatBtn5 btn" type="submit" name="login" value="Login">
+
+	</form>
+</div>
+</body>
+</html>
